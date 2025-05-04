@@ -6,7 +6,7 @@
       "esModuleInterop": true,
       "noEmit": true,
       "allowImportingTsExtensions": true,
-      "strict": true
+      "strict": true 
     }
   }
   
