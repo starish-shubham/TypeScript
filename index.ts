@@ -13,7 +13,7 @@ console.log(color);
 
 
 color=100;
-console.log(color);
+console.log(color); 
 
 color=true;
 console.log(color);
