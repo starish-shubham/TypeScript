@@ -36,12 +36,23 @@ const double = (x:number,y:number)=>x+y;
 // const res = double(3,3,0);
 // console.log(res);
 
+
 const greet=(person:string = "Shubham") => {return `Hello ${person}`};
+// const greet=(person:string = "Shubham") => console.log("pp");
+
+// ye niche type define krdiya ki resGreet string type k h
 const resGreet:string = greet();
-// console.log(resGreet);
+
+// ye niche type define krdiya ki resGreet void type k h print krega undefined
+// const resGreet:void = greet();
+console.log("experiment: " + resGreet);
 // console.log(greet("abc"));
 
-const printMessage: (s: string) => void = (s: string) => console.log(s);
+// - ye niche hum printMessage ko bta rhe h ki ye proper function h void type k joki string inp lega aur void return krega uske bd function ko isi trh define kiya h
+// const printMessage: (s: string) => void = (s: string) => console.log(s);
+
+// - ye niche hum printMessage ko bta rhe h ki ye funcyion h joki string type inp lega aur print krega
+const printMessage= (s: string) => console.log(s);
 // printMessage("ShubhamG");
 
 function printMessage1(s:string){
@@ -52,10 +63,9 @@ function printMessage1(s:string){
 function infiniteLoop(): string{
     while (true) {
         console.log("123");
-        
     }
 }
-
+// infiniteLoop();
 
 
 
