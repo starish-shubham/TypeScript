@@ -20,7 +20,7 @@ function printObj(person: Std) {
 // Optional Properties
 type Emp = {
     profile: string;
-    readonly Id?: number
+    readonly Id?: number | string
 }
 
 
@@ -53,9 +53,27 @@ function printUnionObj(obj:StdandEmp){
 
 // printUnionObj(union);
 
-let abc: (string | number);
-abc = "qw";
-abc = 12;
-console.log(abc);
+let abc: (string | number) = 50;
+// abc = "qw";
+// abc = 12;
+// console.log(abc);
+
+const items: (number | string)[] = [1,2,3,"4"];
+// console.log(items);
+
+//Literals state the predefined values
+let a1: "a" | "b" | "c" ;
+a1 = "a";     // valid
+// a1 = "d";  // invalid
+
+let a2: 200 | 400 | 404 | 500 | 439 ;
+a2=200 //valid
+// a2=900 //invalid
+
+let perSon : {n:"n1", a:2} | {n:"n2", a:3};
+perSon = {n:"n1", a:2}
+console.log(perSon);
+
+let c: "m" = "m"; // this is same as c="m" in another line
 
 
