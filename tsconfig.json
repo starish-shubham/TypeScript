@@ -10,3 +10,5 @@
     }
   }
   
+
+  //  tsc --init  another method to create tsconfig.json
